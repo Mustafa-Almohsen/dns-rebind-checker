@@ -32,11 +32,11 @@ It works by making a domain resolve to one IP address first then later resolve t
 Usage
 
 Single Domain:
-python3 rebind_checker.py -d example.com -n 5 
+python3 rebind_checker.py -d example.com -n 5                                                                                                                                                                              
 #This will check example.com 5 times for DNS rebinding behavior.
 
 List of Domains:
-python3 rebind_checker.py -l domains.txt -n 10
+python3 rebind_checker.py -l domains.txt -n 10                                                                                                                                                                             
 #This will check each domain in domains.txt 10 times.
 ![no re](https://github.com/user-attachments/assets/fa91988f-6195-4242-a58d-78036cff2950)
 ![det](https://github.com/user-attachments/assets/a74bad07-dfc4-4eb6-a61f-0021c7e99d33)
