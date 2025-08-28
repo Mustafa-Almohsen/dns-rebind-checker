@@ -12,7 +12,8 @@ A simple Python tool to test domains against potential DNS rebinding attacks
 It allows you to check a single domain or a list of domains, and perform multiple resolution attempts to detect if the IP address changes unexpectedly.
 
 ---------
-The question is --> What is DNS Rebinding?
+The question is --> What is DNS Rebinding?                                                                                                                                                                                 
+
 Well DNS rebinding is an attack that tricks a victim   browser into bypassing the (SOP) Same-Origin Policy.  
 It works by making a domain resolve to one IP address first then later resolve to a different IP (example-  internal/private IP) allowing the attacker to interact with internal services through the victim browser.
 
