@@ -37,8 +37,7 @@ python3 rebind_checker.py -d example.com -n 5
 List of Domains:
 python3 rebind_checker.py -l domains.txt -n 10
 #This will check each domain in domains.txt 10 times.
+![no re](https://github.com/user-attachments/assets/fa91988f-6195-4242-a58d-78036cff2950)
+![det](https://github.com/user-attachments/assets/a74bad07-dfc4-4eb6-a61f-0021c7e99d33)
 
-![Screenshot 2025-08-28 000905](https://github.com/user-attachments/assets/b32d2428-ee3b-4aab-818b-bf0acfd738f8)
-
-<img width="774" height="586" alt="image" src="https://github.com/user-attachments/assets/3fe748bb-c2c1-402d-adb5-b2a1dacbe5c9" />
 
