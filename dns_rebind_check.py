@@ -5,15 +5,33 @@ import sys
 import time
 import argparse
 from rich.console import Console
+console = Console()
 from rich.table import Table
 from pyfiglet import Figlet
 
-console = Console()
 
-def banner():
-    fig = Figlet(font="slant")
-    console.print(fig.renderText("DNS Rebind Check"), style="bold cyan")
-    console.print("[bold yellow]by Mustafa-almohsen[/bold yellow]\n")
+BANNER = r"""
+ ______   _        _______    _______  _______  ______  _________
+(  __  \ ( (    /|(  ____ \  (  ____ )(  ____ \(  ___ \ \__   __/
+| (  \  )|  \  ( || (    \/  | (    )|| (    \/| (   ) )   ) (
+| |   ) ||   \ | || (_____   | (____)|| (__    | (__/ /    | |
+| |   | || (\ \) |(_____  )  |     __)|  __)   |  __ (     | |
+| |   ) || | \   |      ) |  | (\ (   | (      | (  \ \    | |
+| (__/  )| )  \  |/\____) |  | ) \ \__| (____/\| )___) )___) (___
+(______/ |/    )_)\_______)  |/   \__/(_______/|/ \___/ \_______/
+
+( (    /|(  __  \   (  ____ \|\     /|(  ____ \(  ____ \| \    /\
+|  \  ( || (  \  )  | (    \/| )   ( || (    \/| (    \/|  \  / /
+|   \ | || |   ) |  | |      | (___) || (__    | |      |  (_/ /
+| (\ \) || |   | |  | |      |  ___  ||  __)   | |      |   _ (
+| | \   || |   ) |  | |      | (   ) || (      | |      |  ( \ \
+| )  \  || (__/  )  | (____/\| )   ( || (____/\| (____/\|  /  \ \
+|/    )_)(______/   (_______/|/     \|(_______/(_______/|_/    \/
+
+                      DNS Rebdind Check
+                  Mustafa-Almohsen
+"""
+
 
 def is_private_ip(ip):
     try:
@@ -71,7 +89,10 @@ def main():
     parser.add_argument("-t", "--delay", type=int, default=3, help="Delay between attempts (seconds)")
     args = parser.parse_args()
 
-    banner()
+
+
+    console.print(BANNER, style="bold cyan")
+
 
     domains = []
     if args.domain:
